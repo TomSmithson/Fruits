@@ -36,7 +36,7 @@ import pandas as pd
 
 import torch
 
-model = torch.hub.load("ultralytics/yolov5", "custom", path="weights/applesSmart.pt")
+model = torch.hub.load("ultralytics/yolov5", "custom", path="C:\\Users\\tomsm\\OneDrive\\Documents\\ai\\depthaiExperiments\\depthai-experiments-master\\gen2-yolo\\device-decoding\\model\\boxYoloV8.pt")
 
 images = []
 resultData = []
@@ -53,7 +53,7 @@ for i in range(0, 14):
 
 for a in resultData:
     a.print()
-    # a.show()
+    a.show()
 
 for a in resultDataPandas:
     conf_data = a["confidence"].to_dict()
@@ -61,7 +61,7 @@ for a in resultDataPandas:
 
 ## Will be useful later on.
 
-# # first, import all necessary modules
+# first, import all necessary modules
 # from pathlib import Path
 
 # import blobconverter
